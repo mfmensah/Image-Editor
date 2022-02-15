@@ -5,16 +5,13 @@ function convertFromRGB(){
         var g = parseInt(document.getElementById("green").value);
         var b = parseInt(document.getElementById("blue").value);
 
-        if(r > 1 || b > 1 || g > 1){
-            //
-            alert("Please enter values between 0.0 and 1.0");
-            return;
-        }
+       
 
         if(r > -1 && b > -1 && g > -1){
             alert(rbgToρɣβL(r, g, b));
         }else{
             alert("Please enter valid numbers");
+            window.location.href="/colorConverter.html";
         }
         
     } catch (error) {
@@ -25,7 +22,13 @@ function convertFromRGB(){
 
  function rbgToρɣβL(r, g, b){
      //returns result in ρɣβL
-     return "The result of the conversion is '--'";
+    var total = parseInt(r+b+g); 
+
+     var first = parseFloat((r/total) * 1);
+     var second = parseFloat((b/total) * 1);
+     var third = parseFloat((g/total) * 1);
+     var l = Math.max(first, second, third);
+     return "The result of the conversion is '("+first.toFixed(1)+","+ second.toFixed(1)+","+ third.toFixed(1)+","+ l.toFixed(1) +")'";
  }
 
  function rgbToHex(r, g, b) {
