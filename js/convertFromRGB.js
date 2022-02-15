@@ -4,7 +4,18 @@ function convertFromRGB(){
         var r = parseInt(document.getElementById("red").value);
         var g = parseInt(document.getElementById("green").value);
         var b = parseInt(document.getElementById("blue").value);
-        alert(rgbToHex(r, g, b));
+
+        if(r > 1 || b > 1 || g > 1){
+            alert("Please enter values between 0.0 and 1.0");
+            return;
+        }
+
+        if(r > -1 && b > -1 && g > -1){
+            alert(rgbToHex(r, g, b));
+        }else{
+            alert("Please enter valid numbers");
+        }
+        
     } catch (error) {
         console.error(error);
         alert("Something went wrong!");
