@@ -11,7 +11,7 @@ function convertFromRGB(){
         }
 
         if(r > -1 && b > -1 && g > -1){
-            alert(rgbToHex(r, g, b));
+            alert(rbgToρɣβL(r, g, b));
         }else{
             alert("Please enter valid numbers");
         }
@@ -22,8 +22,9 @@ function convertFromRGB(){
     }
  }
 
- function rbgtoρɣβL(r, g, b){
+ function rbgToρɣβL(r, g, b){
      //returns result in ρɣβL
+     return "The result of the conversion is '--'";
  }
 
  function rgbToHex(r, g, b) {

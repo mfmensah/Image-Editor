@@ -14,7 +14,8 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
-    <script src="js/convertFromRGB.js"></script>
+  <script src="js/convertFromRGB.js"></script>
+  <script src="js/convertToRGB.js"></script>
 </head>
 
 <body>
@@ -31,5 +32,25 @@
       <input type="text" id="blue" name="Blue"><br><br>
         <input type="submit" value="Convert to ρɣβL">
       </form>
+      <br>
+      <br>
+      <br>
+      
+    <h3>Convert from ρɣβL to RGB</h3>
+      <form onsubmit="return convertToRGB();" method="post" class="to-rgb">
+        <label for="red">ρ</label>
+        <input type="text" id="red" name="Red">
+        <br><br>
+        <label for="green">ɣ</label>
+        <input type="text" id="green" name="Green">
+        <br><br>
+        <label for="blue">β</label>
+        <input type="text" id="blue" name="Blue">
+        <br>
+        <br>
+        <label for="lum">L</label>
+        <input type="text" id="lum" name="Lum"><br><br>
+          <input type="submit" value="Convert to ρɣβL">
+        </form>
 </body>
 </html>
