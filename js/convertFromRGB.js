@@ -6,6 +6,7 @@ function convertFromRGB(){
         var b = parseInt(document.getElementById("blue").value);
 
         if(r > 1 || b > 1 || g > 1){
+            //
             alert("Please enter values between 0.0 and 1.0");
             return;
         }
