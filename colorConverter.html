@@ -4,27 +4,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>A Basic HTML5 Template</title>
-  <meta name="description" content="A simple HTML5 Template for new projects.">
-  <meta name="author" content="SitePoint">
-
-  <meta property="og:title" content="A Basic HTML5 Template">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-  <meta property="og:description" content="A simple HTML5 Template for new projects.">
-  <meta property="og:image" content="image.png">
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  
+  
+  <title>Color Converter</title>
 
   <link rel="icon" href="/favicon.ico">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
-
+    <script src="js/convertFromRGB.js"></script>
 </head>
 
 <body>
-  <!-- your content here... -->
-  <script src="js/scripts.js"></script>
+    <a href="index.html">Go home</a>
+    <h3>Convert from RGB to ρɣβL</h3>
+    <form onsubmit="return convertFromRGB();" method="post" class="from-rgb">
+      <label for="red">R</label>
+      <input type="text" id="red" name="Red">
+      <br><br>
+      <label for="green">G</label>
+      <input type="text" id="green" name="Green">
+      <br><br>
+      <label for="blue">B</label>
+      <input type="text" id="blue" name="Blue"><br><br>
+        <input type="submit" value="Convert to ρɣβL">
+      </form>
 </body>
 </html>
