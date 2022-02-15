@@ -11,6 +11,10 @@ function convertFromRGB(){
     }
  }
 
+ function rbgtoρɣβL(r, g, b){
+     //returns result in ρɣβL
+ }
+
  function rgbToHex(r, g, b) {
     return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
   }
